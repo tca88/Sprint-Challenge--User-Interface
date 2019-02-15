@@ -79,7 +79,7 @@ p {
     margin: 0 auto;
 }
 
-/* ---------------------- header ---------------------- */ 
+/*  Header  */ 
 header.header-container {
     display: flex;
     flex-direction: row-reverse;
@@ -108,14 +108,14 @@ header.header-container nav {
 	vertical-align: bottom;
   } 
 
-  /* ---------------------- page banner image ---------------------- */
+  /*  Homepage banner image  */
 
-  img.home-header-img {
+  img.home-banner-img {
       margin-top: 2%;
       margin-bottom: 2%;
   }
 
-  /* ---------------------- Top Content ---------------------- */
+  /*  Top Content  */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +130,7 @@ header.header-container nav {
     padding-bottom: 20px;  
 }
 
-/* ---------------------- Middle Content ---------------------- */
+/*  Middle Content  */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -198,7 +198,7 @@ header.header-container nav {
     background: dodgerblue;
 }
 
-/* ---------------------- Bottom Content ---------------------- */
+/*  Bottom Content  */
 
 .bottom-content {
     display: flex;
@@ -214,7 +214,7 @@ header.header-container nav {
     padding-right: 0;
 }
 
-/* ---------------------- Footer Content ---------------------- */
+/*  Footer Content  */
 footer {
     width: 100%;
     background: black;
@@ -233,3 +233,18 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* ------------------------ About Page Styles ---------------------- */
+
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ /*  About page banner image  */
+
+img.about-banner-img {
+    margin-top: 2%;
+      margin-bottom: 2%;
+  }
