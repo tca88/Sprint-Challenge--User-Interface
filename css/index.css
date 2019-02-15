@@ -85,7 +85,7 @@ header.header-container {
     flex-direction: row-reverse;
     align-items: flex-end;
     margin-top: 2.5%;
-    margin-bottom: 3.5%;
+    margin-bottom: 2.5%;
 }
 
 header.header-container nav {
@@ -110,6 +110,10 @@ header.header-container nav {
 
   /* ---------------------- page banner image ---------------------- */
 
+  img.home-header-img {
+      margin-top: 2%;
+      margin-bottom: 2%;
+  }
 
 .top-content {
     display: flex;
