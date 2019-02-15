@@ -79,7 +79,7 @@ p {
     margin: 0 auto;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .container {
       width: 100%;
       display: block;
@@ -95,7 +95,7 @@ header.header-container {
     margin-bottom: 2.5%;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     header.header-container {
       flex-direction: column;
       width: 100%;
@@ -117,7 +117,7 @@ header.header-container nav {
 	text-decoration: none;
   }
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     header.header-container nav a {
       display: flex;
       flex-direction: column;
@@ -136,7 +136,7 @@ header.header-container nav {
 	vertical-align: bottom;
   } 
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     header.header-container .logo {
         display: flex;
         flex-direction: column;
@@ -151,7 +151,7 @@ header.header-container nav {
       margin-bottom: 2%;
   }
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     img.home-banner-img {
         display: block;
         width: 95%;
@@ -168,7 +168,7 @@ header.header-container nav {
     border-bottom: 1px dashed black;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .top-content {
       flex-direction: column;
       text-align: center;
@@ -181,7 +181,7 @@ header.header-container nav {
     padding-bottom: 20px;  
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .top-content .text-container {
       width: 100%
     }
@@ -198,7 +198,7 @@ header.header-container nav {
     margin-bottom: 0;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .middle-content h2 {
       text-align: center;
       margin: 0 4%;
@@ -211,7 +211,7 @@ header.header-container nav {
     justify-content: space-evenly;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .middle-content .boxes {
       flex-direction: column;
     }
@@ -228,7 +228,7 @@ header.header-container nav {
     justify-content: center;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .middle-content .boxes .box {
       align-self: center;
     }
@@ -281,7 +281,7 @@ header.header-container nav {
     justify-content: space-around;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .bottom-content {
       flex-direction: column;
       text-align: center;
@@ -317,7 +317,7 @@ footer nav a {
     text-decoration: none;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     footer nav {
       flex-direction: column;
       width: 100%;
@@ -325,7 +325,7 @@ footer nav a {
     }
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     footer nav a {
       margin: 2%;
     }
@@ -339,7 +339,7 @@ footer nav a {
     margin: 0 auto;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 800px) {
     .container.about-page {
       width: 100%;
       display: block;
@@ -358,7 +358,7 @@ footer nav a {
       padding-bottom: 2%;
   }
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     .about-intro img.about-banner-img {
         display: block;
         width: 95%;
@@ -370,10 +370,11 @@ footer nav a {
       padding-bottom: 2%;
   }
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     .about-intro .about-text-content {
         display: block;
         text-align: center;
+        width: 95%;
     }
 }
   /*  About Main Content  */
@@ -385,12 +386,11 @@ footer nav a {
     justify-content: space-between;
   }
 
-  @media(max-width: 667px) {
+  @media(max-width: 800px) {
     .about-main-container {
       flex-direction: column;
       align-content: center;
       width: 100%;
-      margin-left: 0;
     }
 }
 
@@ -402,6 +402,13 @@ footer nav a {
     width: 48%;
     line-height: 20px;
   }
+
+  @media(max-width: 800px) {
+    .about-main-container .about-content-block {
+      width: 80%;
+      margin-right: 13%;
+    }
+}
 
   .about-main-container .about-content-block h2 {
       margin-top: 3%;
@@ -425,7 +432,7 @@ footer nav a {
 
     }
 
-    @media(max-width: 667px) {
+    @media(max-width: 800px) {
         .about-bottom-content {
           text-align: center;
         }
