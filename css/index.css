@@ -242,9 +242,18 @@ footer nav a {
     margin: 0 auto;
 }
 
- /*  About page banner image  */
+ /*  About page intro  */
 
-img.about-banner-img {
+ .about-intro {
+     border-bottom: 1px dashed black;
+     margin-bottom: 4%;
+ }
+
+.about-intro img.about-banner-img {
     margin-top: 2%;
-      margin-bottom: 2%;
+      padding-bottom: 2%;
+  }
+
+  .about-intro .about-text-content {
+      padding-bottom: 2%;
   }
