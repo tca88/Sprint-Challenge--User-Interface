@@ -270,7 +270,7 @@ footer nav a {
   .about-main-container .about-content-block {
     border-bottom: 1px dashed black;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     height: 48%;
     width: 48%;
     line-height: 20px;
@@ -282,10 +282,18 @@ footer nav a {
   .about-main-container .about-content-block button.about-learn-button {
     background: white;
       vertical-align: top;
-      margin-top: 15px;
+      margin-top: 5%;
       padding: 8px 20px;
       font-size: 14px;
       border: 2px solid black;
     cursor: pointer;
     border-radius: 10px;
+    }
+
+    /*  About Bottom Content  */
+
+    .about-bottom-content {
+        padding: 5px;
+        margin-bottom: 4%;
+
     }
