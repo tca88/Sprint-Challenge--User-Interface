@@ -257,3 +257,35 @@ footer nav a {
   .about-intro .about-text-content {
       padding-bottom: 2%;
   }
+
+  /*  About Main Content  */
+
+  .about-main-container {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-main-container .about-content-block {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    height: 48%;
+    width: 48%;
+    line-height: 20px;
+  }
+
+  .about-main-container .about-content-block h2 {
+      margin-top: 3%;
+  }
+  .about-main-container .about-content-block button.about-learn-button {
+    background: white;
+      vertical-align: top;
+      margin-top: 15px;
+      padding: 8px 20px;
+      font-size: 14px;
+      border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    }
