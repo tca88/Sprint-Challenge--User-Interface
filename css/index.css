@@ -47,9 +47,17 @@ table {
 	border-spacing: 0;
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
+
+/* implemented box-sizing on html selector instead here */
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
 
 html, body {
     height: 100%;
@@ -71,6 +79,87 @@ p {
     margin: 0 auto;
 }
 
+@media(max-width: 800px) {
+    .container {
+      width: 100%;
+      display: block;
+    }
+}
+
+/*  Header  */ 
+header.header-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+@media(max-width: 800px) {
+    header.header-container {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+}
+
+header.header-container nav {
+	width: 90%;
+	vertical-align: bottom;
+  }
+
+
+  
+  header.header-container nav a {
+	margin-left: 12%;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+  }
+
+  @media(max-width: 800px) {
+    header.header-container nav a {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 8%;
+      align-items: center;
+      margin-left: 0;
+    }
+}
+  
+  header.header-container nav a:hover {
+	text-decoration: underline;
+  }
+  
+   header.header-container .logo {
+	vertical-align: bottom;
+  } 
+
+  @media(max-width: 800px) {
+    header.header-container .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+  /*  Homepage banner image  */
+
+  img.home-banner-img {
+      margin-top: 2%;
+      margin-bottom: 2%;
+  }
+
+  @media(max-width: 800px) {
+    img.home-banner-img {
+        display: block;
+        width: 95%;
+        margin-left: 2%;
+    }
+}
+
+  /*  Top Content  */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,12 +168,26 @@ p {
     border-bottom: 1px dashed black;
 }
 
+@media(max-width: 800px) {
+    .top-content {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
+@media(max-width: 800px) {
+    .top-content .text-container {
+      width: 100%
+    }
+}
+
+/*  Middle Content  */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -95,10 +198,23 @@ p {
     margin-bottom: 0;
 }
 
+@media(max-width: 800px) {
+    .middle-content h2 {
+      text-align: center;
+      margin: 0 4%;
+    }
+}
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+@media(max-width: 800px) {
+    .middle-content .boxes {
+      flex-direction: column;
+    }
 }
 
 .middle-content .boxes .box {
@@ -112,10 +228,64 @@ p {
     justify-content: center;
 }
 
+@media(max-width: 800px) {
+    .middle-content .boxes .box {
+      align-self: center;
+    }
+}
+.middle-content .boxes .box.box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background: dodgerblue;
+}
+
+/*  Bottom Content  */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+@media(max-width: 800px) {
+    .bottom-content {
+      flex-direction: column;
+      text-align: center;
+    }
 }
 
 .bottom-content .text-container {
@@ -126,6 +296,7 @@ p {
     padding-right: 0;
 }
 
+/*  Footer Content  */
 footer {
     width: 100%;
     background: black;
@@ -140,7 +311,133 @@ footer nav {
     font-size: 14px;
 }
 
+
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+@media(max-width: 800px) {
+    footer nav {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+}
+
+@media(max-width: 800px) {
+    footer nav a {
+      margin: 2%;
+    }
+}
+
+
+/* ------------------------ About Page Styles ---------------------- */
+
+.container.about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    .container.about-page {
+      width: 100%;
+      display: block;
+    }
+}
+
+ /*  About page intro  */
+
+ .about-intro {
+     border-bottom: 1px dashed black;
+     margin-bottom: 4%;
+ }
+
+.about-intro img.about-banner-img {
+    margin-top: 2%;
+      padding-bottom: 2%;
+  }
+
+  @media(max-width: 800px) {
+    .about-intro img.about-banner-img {
+        display: block;
+        width: 95%;
+        margin-left: 2%;
+    }
+}
+
+  .about-intro .about-text-content {
+      padding-bottom: 2%;
+  }
+
+  @media(max-width: 800px) {
+    .about-intro .about-text-content {
+        display: block;
+        text-align: center;
+        width: 95%;
+    }
+}
+  /*  About Main Content  */
+
+  .about-main-container {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media(max-width: 800px) {
+    .about-main-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+}
+
+  .about-main-container .about-content-block {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+    height: 48%;
+    width: 48%;
+    line-height: 20px;
+  }
+
+  @media(max-width: 800px) {
+    .about-main-container .about-content-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+    }
+}
+
+  .about-main-container .about-content-block h2 {
+      margin-top: 3%;
+  }
+  .about-main-container .about-content-block button.about-learn-button {
+    background: white;
+      vertical-align: top;
+      margin-top: 5%;
+      padding: 8px 20px;
+      font-size: 14px;
+      border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    }
+
+    /*  About Bottom Content  */
+
+    .about-bottom-content {
+        padding: 5px;
+        margin-bottom: 4%;
+
+    }
+
+    @media(max-width: 800px) {
+        .about-bottom-content {
+          text-align: center;
+        }
+    }
